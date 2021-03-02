@@ -49,7 +49,7 @@ main {
   height: 2px;
   width: 0%;
   right: 0%;
-  background-color: purple;
+  background-color: blue;
   bottom: calc(100% + 5px);
   transition: width 0.3s ease-in-out;
 }
@@ -63,11 +63,28 @@ main {
   position: absolute;
   height: 2px;
   width: 0%;
-  background-color: purple;
+  background-color: blue;
   top: calc(100% + 5px);
 
   transition: width 0.3s ease-in-out;
 }
 .item-second:hover::before {
   width: 100%;
+}
+.sub-list {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.sub-list-item {
+  border: 1px solid black;
+  background-color: blanchedalmond;
+  display: none;
+}
+.sub-list-item:hover {
+  background-color: #61606b;
+  color: orange;
+}
+.list-item:hover .sub-list-item {
+  display: block;
 }
